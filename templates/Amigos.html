@@ -1,0 +1,55 @@
+<style>
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+    #home{
+        border: 2px solid rgb(23, 42, 44);
+        padding: 30px;
+    }
+    #home input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+    }
+    .button {
+        background-color: #130b3b;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+</style>
+<body style = "background-color: #f7cac9;"></body>
+<h1>Welcome to Amigos</h1>
+<form action="BillA">
+    {{error}}<br>
+    <section id="home">
+    <h2>Veg Items</h2>    
+    Veg Biryani - {{p_veg}}/- <input type="text" name="veg" value="0"><br>
+    Onion Salad - {{p_salad}}/- <input type="text" name="salad" value="0"><br>
+    Paneer Biryani - {{p_pan}}/- <input type="text" name="pan" value="0"><br>
+    Mixed Veg Curry - {{p_mix}}/- <input type="text" name="mix" value="0"><br>
+    Roti - {{p_roti}}/- <input type="text" name="roti" value="0"><br>
+    </section>
+    <section id="home">
+    <h2>Non Veg Items</h2>
+    Chicken Biryani - {{p_non}}/- <input type="text" name="non" value="0"><br>
+    Chicken Curry - {{p_chic}}/- <input type="text" name="chic" value="0"><br>
+    Fish Curry - {{p_fish}}/- <input type="text" name="fish" value="0"><br>
+    </section>
+    <button class="button" name="details" type="submit">submit</button>
+   
+</form> 
+<form action="back2">
+    <button class="button" name="details" type="submit">back</button>
+</form>
